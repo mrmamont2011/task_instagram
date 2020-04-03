@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+}
+
+.intaractive_block {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+.intaractive_block:hover .sn_name {
+  left: -250px;
+  transform: rotate(90deg);
+  transition: transform 1s linear 0s, left 1s linear 0s;
+}
+.intaractive_block:hover .back_image {
+  left: 65px;
+  transition: left 1s ease 1s;
+}
+.intaractive_block:hover .image {
+  opacity: 1;
+  transition: opacity 1s ease 2s;
+}
+
+.sn_name {
+  position: absolute;
+  z-index: 5;
+  top: 290px;
+  left: 148px;
+  font-size: 154px;
+  width: 701px;
+  text-align: center;
+  background: white;
+  transition: transform 1s linear 0s, left 1s linear 0s;
+}
+
+.image {
+  opacity: 0;
+  transition: none;
+}
+
+.image_block {
+  position: relative;
+  margin-left: 168px;
+}
+
+.back_image {
+  position: absolute;
+  width: 675px;
+  height: 506px;
+  background: url("inst.png") no-repeat;
+  left: -846px;
+  top: 99px;
+  background-position: -65px -99px;
+  transition: none;
+}
+
+/*# sourceMappingURL=style.css.map */
